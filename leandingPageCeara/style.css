@@ -1,0 +1,360 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px);
+}
+
+.navBar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imgLogo {
+    width: 100px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 13px;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+
+#SobreNos {
+    height: 100vh;
+    padding-top: 80px;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgFundo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(40%);
+}
+
+.SobreNosContent {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    text-align: center;
+}
+
+.Titulo {
+    font-size: 42px;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+}
+
+.SobreNosContent p {
+    font-size: 16px;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+
+.SobreNosBtns {
+    display: flex;
+    gap: 15px;
+}
+
+.btn1,
+.btn2 {
+    width: 150px;
+    height: 45px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn1 {
+    background: white;
+    color: black;
+    border: none;
+}
+
+.btn1:hover {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.btn2 {
+    background: transparent;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.btn2:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+#Planos {
+    min-height: 100vh;
+    padding: 80px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#Planos h3 {
+    font-size: 14px;
+    opacity: 0.7;
+    margin-bottom: 10px;
+}
+
+#Planos h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#Planos p {
+    max-width: 600px;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+
+.cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    min-height: 380px;
+    padding: 30px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: white;
+}
+
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    opacity: 0.8;
+    flex-grow: 1;
+}
+
+.card button {
+    width: 100%;
+    height: 45px;
+    margin-top: 20px;
+
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+
+    background: white;
+    color: black;
+}
+
+.card button:hover {
+    background: rgba(200, 200, 200, 0.9);
+}
+
+
+#Beneficios {
+    min-height: 100vh;
+    padding: 80px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#Beneficios h3 {
+    font-size: 14px;
+    opacity: 0.7;
+    margin-bottom: 10px;
+}
+
+#Beneficios h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#Beneficios p {
+    max-width: 600px;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.saibaMais{
+    list-style: none;
+    color: white;
+    margin-top: auto;
+    margin-bottom: 16px;
+    display: inline-block;
+}
+.saibaMais:hover{
+    color: rgba(255, 255, 255, 0.596);    
+}
+
+.seta{
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 10px;
+}
+
+.card hr {
+    
+    margin-bottom: 12px;
+}
+
+
+.price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price-main {
+    font-size: 32px; 
+    font-weight: bold;
+}
+
+.price-sub {
+    font-size: 0.8em;
+    opacity: 0.7;
+}
+
+
+.saibaMais {
+    margin-bottom: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+.social-icons a {
+    color: #ffffff;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #b3b3b3;
+}
+footer{
+    margin-top: 80px;
+    font-family: Arial, sans-serif;
+}
+
+.creditos-desenvolvedor{
+    margin-top: 80px;
+}
+
+.creditos-desenvolvedor p{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-social h2 {
+    font-size: 42px;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+}
+
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.creditos-desenvolvedor p {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    color: #8f8e8e;
+}
+
+.creditos-desenvolvedor a {
+    color: #ffffff;
+}
+
