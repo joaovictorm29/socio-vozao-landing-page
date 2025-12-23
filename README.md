@@ -38,11 +38,17 @@ Criar uma página única (single-page) que:
 ## 📐 Estrutura do Projeto
 
 📁 socio-vozao-landing-page
+
 │
+
 ├── index.html
+
 ├── style.css
+
 ├── vozao-logo.webp
+
 ├── imgFundo.jpg
+
 └── README.md
 
 
